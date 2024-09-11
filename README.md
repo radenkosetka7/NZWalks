@@ -14,5 +14,7 @@ The key features I implemented include:
 
 **AutoMapper**: Automatic mapping between entity and DTO (Data Transfer Object) models for code optimization.  
 
+**Caching**: Implemented caching for adding individual regions to optimize performance and reduce redundant processing.  
+
 This API is designed to be easily integrated with client applications, providing all necessary functionalities for managing trail data.
 
