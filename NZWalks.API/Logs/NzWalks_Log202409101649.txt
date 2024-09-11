@@ -1,0 +1,30 @@
+2024-09-10 16:49:33.269 +02:00 [INF] User profile is available. Using 'C:\Users\radenko.setka\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-10 16:49:33.581 +02:00 [INF] Now listening on: https://localhost:7051
+2024-09-10 16:49:33.581 +02:00 [INF] Now listening on: http://localhost:5274
+2024-09-10 16:49:33.582 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-10 16:49:33.583 +02:00 [INF] Hosting environment: Development
+2024-09-10 16:49:33.583 +02:00 [INF] Content root path: C:\Users\radenko.setka\source\repos\NZWalks\NZWalks.API
+2024-09-10 16:49:37.128 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7051/swagger/index.html - null null
+2024-09-10 16:49:37.326 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7051/swagger/index.html - 200 null text/html;charset=utf-8 202.3348ms
+2024-09-10 16:49:37.330 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-10 16:49:37.335 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.5547ms
+2024-09-10 16:49:37.337 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7051/_vs/browserLink - null null
+2024-09-10 16:49:37.367 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.3739ms
+2024-09-10 16:49:37.454 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7051/swagger/v1/swagger.json - null null
+2024-09-10 16:49:37.549 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7051/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 95.3856ms
+2024-09-10 16:49:56.765 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7051/api/Auth/login - application/json 63
+2024-09-10 16:49:57.008 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.AuthController.Login (NZWalks.API)'
+2024-09-10 16:49:57.035 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(NZWalks.API.Models.DTO.LoginRequestDTO) on controller NZWalks.API.Controllers.AuthController (NZWalks.API).
+2024-09-10 16:49:58.365 +02:00 [INF] Executed DbCommand (49ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-09-10 16:49:58.523 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-09-10 16:49:58.549 +02:00 [INF] Executing OkObjectResult, writing value of type 'NZWalks.API.Models.DTO.LoginResponseDTO'.
+2024-09-10 16:49:58.554 +02:00 [INF] Executed action NZWalks.API.Controllers.AuthController.Login (NZWalks.API) in 1516.0612ms
+2024-09-10 16:49:58.554 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.AuthController.Login (NZWalks.API)'
+2024-09-10 16:49:58.559 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7051/api/Auth/login - 200 null application/json; charset=utf-8 1793.7885ms

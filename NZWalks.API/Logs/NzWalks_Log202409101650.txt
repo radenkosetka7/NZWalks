@@ -1,0 +1,20 @@
+2024-09-10 16:50:13.429 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7051/api/regions/6884F7D7-AD1F-4101-8DF3-7A6FA7387D81 - application/json 70
+2024-09-10 16:50:13.526 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.GetById (NZWalks.API)'
+2024-09-10 16:50:13.531 +02:00 [INF] Route matched with {action = "GetById", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-09-10 16:50:13.715 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+WHERE [r].[Id] = @__id_0
+2024-09-10 16:50:13.726 +02:00 [INF] Finished GetById request with data: {"Id":"6884f7d7-ad1f-4101-8df3-7a6fa7387d81","Code":"NTL","Name":"Northland","RegionImageUrl":null}
+2024-09-10 16:50:13.730 +02:00 [INF] Executing OkObjectResult, writing value of type 'NZWalks.API.Models.DTO.RegionDTO'.
+2024-09-10 16:50:13.734 +02:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.GetById (NZWalks.API) in 201.8853ms
+2024-09-10 16:50:13.734 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.GetById (NZWalks.API)'
+2024-09-10 16:50:13.734 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7051/api/regions/6884F7D7-AD1F-4101-8DF3-7A6FA7387D81 - 200 null application/json; charset=utf-8 305.4831ms
+2024-09-10 16:50:15.747 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7051/api/regions/6884F7D7-AD1F-4101-8DF3-7A6FA7387D81 - application/json 70
+2024-09-10 16:50:15.750 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.GetById (NZWalks.API)'
+2024-09-10 16:50:15.750 +02:00 [INF] Route matched with {action = "GetById", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-09-10 16:50:15.751 +02:00 [INF] Finished GetById request with data: {"Id":"6884f7d7-ad1f-4101-8df3-7a6fa7387d81","Code":"NTL","Name":"Northland","RegionImageUrl":null}
+2024-09-10 16:50:15.752 +02:00 [INF] Executing OkObjectResult, writing value of type 'NZWalks.API.Models.DTO.RegionDTO'.
+2024-09-10 16:50:15.752 +02:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.GetById (NZWalks.API) in 1.412ms
+2024-09-10 16:50:15.752 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.GetById (NZWalks.API)'
+2024-09-10 16:50:15.752 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7051/api/regions/6884F7D7-AD1F-4101-8DF3-7A6FA7387D81 - 200 null application/json; charset=utf-8 5.3865ms
